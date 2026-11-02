@@ -57,7 +57,7 @@ Generated peripheral initialization and RTOS entry points are under `Core/`.
 - Git
 - Arm GNU Toolchain for `arm-none-eabi`
 - CMake 3.25 or newer
-- Ninja
+- Ninja 
 - clang-format 17
 - STM32CubeMX for peripheral configuration and code generation
 - TouchGFX Designer for steering-wheel GUI development
