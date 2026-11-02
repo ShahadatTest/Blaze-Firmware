@@ -28,7 +28,8 @@ HAL_StatusTypeDef BQ76952::Init(I2C_HandleTypeDef *hi2c){
 	return Init(hi2c, BQ_I2C_ADDR_WRITE);
 }
 
-HAL_StatusTypeDef BQ76952::Reset() {
+HAL_StatusTypeDef BQ76952::Reset() const
+{
     return SubcmdCmdOnly(BQ769X2_SUBCMD_RESET);
 }
 
