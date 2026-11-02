@@ -14,7 +14,7 @@ void userDefaultTask(void* argument)
 {
     for (;;)
     {
-        osDelay(1);
+        osDelay(1000);
         HAL_IWDG_Refresh(&hiwdg);
     }
 }
