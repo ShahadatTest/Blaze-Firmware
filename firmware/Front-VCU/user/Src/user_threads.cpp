@@ -6,10 +6,15 @@
 
 #include "cmsis_os.h"
 
+#include "stm32g4xx_hal_iwdg.h"
+
+extern IWDG_HandleTypeDef hiwdg;
+
 void userDefaultTask(void* argument)
 {
     for (;;)
     {
         osDelay(1);
+        HAL_IWDG_Refresh(&hiwdg);
     }
 }
